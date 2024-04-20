@@ -11,7 +11,7 @@ const session=require("express-session");
 
 const connectDB1=require("./BackEnd/server/config/db1");
 const app = express();
-const PORT =  5000 || process.env.PORT;
+const PORT = process.env.PORT || 5000;
 
 connectDB1();
 app.use(express.static("Frontend/public"));
