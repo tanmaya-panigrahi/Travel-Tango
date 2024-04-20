@@ -1,0 +1,86 @@
+
+
+<!-- main screen when the page opens -->
+
+<div class="main-blog">
+    <div class="main-container">
+        <div class="first-main-container">
+            <div class="main-text">
+                <h1>Delve <span>deeper </span>into your prospective <span>destinations</span></h1>
+                <p>~"Embark on Unforgettable Adventures"</p>
+            </div>
+            <div class="main-image">
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+        <div class="second-main-container">
+            
+                <div class="form-search">
+                    <form action="/search" method="POST" class="search-bar">
+                        <input type="text" name="search" placeholder="Search Blogs...." class="search-input">
+                        <button type="submit" class="search-icon"><img src="/images/svgs/search.svg" alt=""></button>
+                    </form>
+                </div>
+                <div class="add-post">
+                    <a href="/add-post">Add Post&nearr;</a>
+                </div>
+
+            
+        </div>
+
+        <!-- <div class="search-addpost">
+            <form action="/search" method="POST" class="search-bar">
+                <input type="text" name="search" placeholder="Search Blogs...." class="search-input">
+                <button type="submit" class="search-icon"><img src="/images/svgs/search.svg" alt=""></button>
+            </form>
+            <div class="add-post">
+                <a href="/add-post">Add Post&nearr;</a>
+            </div>
+        </div> -->
+    </div>
+
+</div>
+
+
+
+
+
+
+<!-- above to this the static designs will be present  -->
+
+<!--below this the posts uploaded by the user will be shown  -->
+
+<div class="container">
+    <div class="blogs">
+        <% for(let i=0;i<posts.length;i++){ %>
+
+            <div class="<%= i%3===0 ? 'full-width bg' : 'half-width bg' %> animate"
+                style="background-image: url('/uploads/<%= posts[i].image %>');">
+                <a href="/blogs/<%= posts[i]._id %>">
+                    <div class="heading-blog">
+
+                        <%= posts[i].title %>
+
+                    </div>
+                    <div class="shadow"></div>
+                </a>
+            </div>
+            <% } %>
+    </div>
+
+
+
+</div>
+<div class="pagination">
+    <% if(previousPage!==null){ %>
+
+        <a href="<%= currentPage  %>/?page=<%= previousPage  %>">&lt; &lt; View Older Posts</a>
+
+        <% } %>
+
+            <% if(recentPage!==null){ %>
+                <a href="<%= currentPage  %>/?page=<%= recentPage  %>">View Recent Posts &gt;&gt;</a>
+                <% } %>
+</div>

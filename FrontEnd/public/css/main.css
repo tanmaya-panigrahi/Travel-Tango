@@ -1,0 +1,1236 @@
+* {
+    margin: 0;
+
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    font-size: 16px;
+}
+
+body {
+    background: white;
+    /* animation: bringpage 2s ease; */
+
+}
+
+
+/* scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+    height: 1px;
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: 0;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: linear-gradient(rgba(255, 255, 255, 0.11), rgba(0, 0, 0, 0.515));
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.23);
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+    background: linear-gradient(rgba(255, 255, 255, 0.11), rgba(0, 0, 0, 0.515));
+}
+
+/* @keyframes bringpage{
+    0%{
+        transform: translateY(-100%);
+    }
+    100%{
+        transform: translateY(0%);
+    }
+} */
+
+
+/* main screen when the page opens */
+
+.main-blog {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8.5em;
+
+}
+
+
+.main-container {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /* align-items: center;
+    justify-content: center; */
+}
+
+.first-main-container {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    /* justify-content: center; */
+    align-items: center;
+
+    gap: 1vw;
+}
+
+
+.main-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+
+}
+
+.main-text h1 {
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.main-text span {
+    color: #1cb5e099
+}
+
+.main-image {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+
+}
+
+.main-image div:first-child {
+    width: 80%;
+    height: 95%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("/images/travel_themes/theme1.jpg");
+    border-radius: 300px;
+}
+
+.main-image div:last-child {
+    position: absolute;
+    border: 2px solid black;
+    width: 80%;
+    height: 95%;
+    border-radius: 300px;
+    bottom: 10%;
+    left: 30%;
+}
+
+
+.second-main-container {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-end; */
+    align-items: flex-end;
+    gap: 1vw;
+}
+
+
+.form-search {
+    width: 60%;
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.search-bar {
+    height: 40%;
+    width: 100%;
+    border: 2px solid rgba(0, 0, 0, 0.342);
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+
+}
+
+.search-input,
+.search-icon {
+    border: 0px;
+    background: transparent;
+}
+
+.search-input:focus {
+    outline: none;
+
+}
+
+.active-search{
+    transform:scaleX(1.2);
+    transition: 0.5s;
+    border: 2px solid black;
+    
+}
+
+
+.search-heading {
+    width: 100%;
+    height: 7vh;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5em;
+    font-size: 3.5rem;
+
+}
+
+.no-blogs {
+    font-size: 2rem;
+}
+
+.add-post {
+    width: 60%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.add-post a {
+    text-decoration: none;
+    border: 0px;
+    width: 100%;
+    border-color: transparent;
+    color: white;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    align-items: center;
+    border-radius: 30px;
+
+}
+
+.add-post a:hover {
+    transition: 1s;
+    font-weight: 600;
+}
+
+*/
+/* blogs part  */
+
+
+
+/* .search-heading{
+    width: 100%;
+    height:30vh;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+/* padding-top: 5vh;
+} */
+
+/* .heading{
+    width:80%;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 15vw;
+   
+    
+
+}  */
+
+
+
+.search {
+    width: 20%;
+    padding-right: 2vw;
+
+}
+
+.search form {
+    border-radius: 10px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+}
+
+.search input,
+.search button {
+
+    border: none;
+    outline: none;
+    font-size: 1rem;
+    background-color: white;
+}
+
+
+/* blog adding to the website css */
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 2.5em;
+}
+
+.blogs {
+    width: 80%;
+    display: grid;
+    /* grid-template-columns: repeat(auto-fill, minmax(40%, 1fr)); */
+    gap: 1vw;
+    justify-items: center;
+    align-items: center;
+}
+
+.blogs div {
+    border-radius: 10px;
+}
+
+
+.full-width,
+.half-width {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 50vh;
+    transition: background-size 0.5s ease, background-position 0.5s ease;
+
+}
+
+.full-width {
+    grid-column: span 2;
+
+
+}
+
+.half-width {
+    grid-column: span 1;
+}
+
+
+.full-width:hover,
+.half-width:hover {
+    background-size: 120% 120%;
+
+}
+
+
+.full-width .heading-blog,
+.half-width .heading-blog {
+    position: absolute;
+    bottom: 2vw;
+    left: 1vw;
+    color: white;
+    z-index: 3;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+
+.shadow {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.3;
+}
+
+
+/* pagination */
+
+.pagination {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 5em;
+}
+
+.pagination a {
+    text-decoration: none;
+
+    border: 0px;
+    width: 15%;
+    /* color: black; */
+
+    border-color: transparent;
+    color: white;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    align-items: center;
+    border-radius: 30px;
+
+}
+
+.pagination a:hover {
+    transition: 1s;
+    font-weight: 600;
+}
+
+
+
+
+/* individual post content page  */
+
+.back_button{
+    margin-top: 9em;
+}   
+.blog-post-main {
+    width: 100%;
+    background-position: center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 85vh;
+    position: relative;
+    margin-top: 8em;
+}
+
+
+.blog-post-main:after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("/images/fade_image.png");
+}
+
+
+.blog-post-heading {
+    position: absolute;
+    /* width:70%; */
+
+    top: 10vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* left: 10vw; */
+    width: 100%;
+    color: white;
+    font-size: 3rem;
+    font-weight: 700;
+    z-index: 3;
+
+}
+
+.created_updated {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 1.75rem;
+    font-weight: 500;
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
+.blog-post-content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    font-size: 1rem;
+
+}
+
+.blog-post-content pre {
+    width: 80%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+
+}
+
+.update-post {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vw;
+
+}
+
+.update-post a {
+    text-decoration: none;
+    border: 0px;
+    width: 15%;
+    color: white;
+    height: 3vw;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    align-items: center;
+    border-radius: 30px;
+
+}
+
+.update-post a:hover {
+    transition: 1s;
+    font-weight: 600;
+}
+
+
+
+/* update post form */
+.form-outer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+
+}
+
+
+.form-main {
+    width: 70%;
+    /* height: 125vh; */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    background: rgba(97, 149, 194, 0.64);
+}
+
+.heading-update {
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1em;
+    margin-top: 1em;
+    scroll-behavior: smooth;
+    scroll-snap-type: proximity;
+}
+
+.update-post-form {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+
+}
+
+.update-post-form div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5vw;
+    border-radius: 30px;
+
+}
+
+.update-post-form div:first-child input {
+    height: 3vw;
+    border-radius: 30px;
+    border: 0px;
+
+}
+
+.update-post-form div textarea {
+    height: 20vw;
+    border-radius: 10px;
+    border: 0px;
+
+}
+
+
+
+.update-post-form .btn {
+    width: 10vw;
+    height: 3vw;
+    border-radius: 30px;
+    margin-bottom: 2.5em;
+    background: white;
+    border: 0px;
+    color: black;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+
+/* destinations */
+
+
+.main {
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8em;
+
+}
+
+.destination-main {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+
+}
+
+.dest-text {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2vw;
+}
+
+.dest-text p:first-child {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+.dest-text p:last-child {
+    font-size: 1.2rem;
+    color: rgba(0, 0, 0, 0.588);
+    padding-left: 3vw;
+}
+
+.highlight {
+    background: linear-gradient(to right, rgb(0, 0, 0), #1cb5e0b2);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.dest-slideshow {
+
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+}
+
+
+.slide {
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    border: 0px;
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.204);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    opacity: 0;
+    display: none;
+    animation: fade 1s ease;
+}
+
+.active {
+    display: block;
+    opacity: 1;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+
+}
+
+
+.separator {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2em;
+    font-size: 1.8rem;
+}
+
+
+section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3em;
+}
+
+.trip-info {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+    gap: 1vw;
+}
+
+.trip-info span {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.itinerary-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 1em;
+}
+
+
+.itinerary {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+    gap: 2vw;
+    justify-items: center;
+
+}
+
+.day {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+
+}
+
+.lookup {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.567);
+
+}
+
+.day-heading {
+    font-weight: 600;
+    display: flex;
+    justify-content: flex-start;
+    width: 80%;
+}
+
+.plus-sign {
+    border-radius: 80%;
+    height: 60%;
+    width: 4%;
+    border: 1px solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+
+
+.lookup:hover {
+    color: #1cb5e0b2;
+    /* transition: 1s; */
+}
+
+.day-content {
+    display: none;
+    animation: fade 1s ease-in;
+}
+
+
+
+.day-content pre {
+
+    width: 100%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+
+.trip-info sub {
+    font-size: 1rem;
+}
+
+.price-per-person {
+    margin-top: 2em;
+}
+
+
+.other-info-heading {
+    margin-top: 0.5em;
+}
+
+.other-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.inclusion-exclusion-heading {
+    display: flex;
+    flex-direction: row;
+    width: 20%;
+
+}
+
+.inclusion-exclusion-heading button {
+    background-color: rgba(128, 128, 128, 0.141);
+    font-size: 1.5rem;
+    width: 50%;
+    padding: 0.5vw;
+    color: rgba(0, 0, 0, 0.6);
+    font-weight: 600;
+    border: 0px;
+}
+
+#inclusion,
+#exclusion {
+    font-size: 1.2rem;
+    width: 50%;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    animation: fade 1s ease-in;
+
+}
+
+#inclusion {
+    display: block;
+}
+
+#exclusion {
+    display: none;
+}
+
+button.active {
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    color: white;
+    font-weight: 600;
+
+}
+
+
+
+/* book tickets part of the website css */
+
+
+.book_tickets {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 12em;
+}
+
+
+.book_tickets_main {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 2vw;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+    border-radius: 20px;
+
+}
+
+.book_tickets_image {
+    width: 100%;
+    background-image: url("/images/book_tickets.png");
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    border-radius: 20px;
+
+
+}
+
+.book_tickets_form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    margin-bottom: 5em;
+
+
+}
+
+.book_tickets_heading {
+    font-size: 2.5rem;
+    font-weight: 600;
+    width: 65%;
+
+
+}
+
+.book_tickets_form form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    margin-top: 2em;
+
+}
+
+
+.book_tickets_form form div {
+    display: flex;
+    flex-direction: row;
+    gap: 0.5vw;
+    align-items: center;
+}
+
+.book_tickets_form form div label {
+    font-size: 1.4rem;
+
+    width: 20%;
+}
+
+.book_tickets_form form div input,
+.book_tickets_form form div select {
+    height: 3vw;
+    border-radius: 30px;
+    border: 2px solid black;
+    width: 40%;
+
+
+}
+
+.book_tickets_form form div input:focus,
+.book_tickets_form form div select:focus {
+    border: 2px solid #1cb5e0b2;
+    outline: none;
+}
+
+.book_tickets_form div textarea {
+    height: 10vw;
+    border-radius: 10px;
+    border: 2px solid black;
+    width: 80%;
+    resize: none;
+}
+
+.book_tickets_form div textarea:focus {
+    border: 2px solid #1cb5e0b2;
+    outline: none;
+}
+
+.book_tickets_button {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.book_tickets_form form div button {
+    width: 20%;
+    height: 3vw;
+
+
+    border-radius: 30px;
+    background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+    color: white;
+    font-size: 1.4rem;
+    font-weight: 600;
+    border: 0px;
+    margin-top: 3em;
+
+}
+
+.book_tickets_form form div button:hover {
+    /* transition: 1s; */
+    font-weight: 700;
+    background: black;
+}
+
+
+
+
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 12px;
+    }
+
+    /* destinations media query */
+
+    .destination-main {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    @keyframes fade {
+        0% {
+            opacity: 0;
+        }
+
+        100% {
+            opacity: 1;
+        }
+    }
+
+    .dest-text {
+        width: 100%;
+        animation: fade 1s ease-in;
+    }
+
+    .dest-slideshow {
+        width: 100%;
+    }
+
+    .trip-info {
+        font-size: 1.5rem;
+    }
+
+    .trip-info span {
+        font-size: 1.8rem;
+    }
+
+    .itinerary-heading {
+        font-size: 1.8rem;
+    }
+
+    .itinerary {
+        grid-template-columns: repeat(auto-fill, minmax(80%, 1fr));
+    }
+
+    .day-heading {
+        font-size: 1.5rem;
+    }
+
+    .plus-sign {
+        width: 6%;
+        height: 65%;
+    }
+
+
+    .inclusion-exclusion-heading {
+        margin-top: 1rem;
+        width: 50%;
+    }
+
+    #inclusion,
+    #exclusion {
+        font-size: 1rem;
+        width: 80%;
+    }
+
+    /* blog media query */
+
+    .main-container {
+        margin-top: 1em;
+        flex-direction: column-reverse;
+    }
+    .first-main-container {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .main-text{
+        width: 90%;
+        height:70%;
+
+    }
+
+    .main-text p{
+        font-size: 1.4  rem;
+    }
+
+    .main-image{
+        width: 85%;
+        justify-content: center;
+    }
+
+    .main-image div:last-child{
+        width: 80%;
+        left: 25%;
+    }
+    
+
+    .second-main-container {
+        width: 100%;
+        height:5%;
+        flex-direction: row;
+        gap: 3em;
+    }
+
+    
+
+    .form-search,.add-post{
+        width: 100%;
+        height: 100%;
+        justify-content: flex-start;
+    }
+    .search-bar{
+        padding: 0.4em;
+        height: 100%;
+    }
+    .add-post a{
+        height: 100%;
+        font-size: 1.3rem;
+    }
+
+    .full-width,
+    .half-width {
+        height: 20vh;
+    }
+
+    .half-width {
+        grid-column: span 2;
+    }
+
+    .pagination a {
+        width: 30%;
+        height: 8vw;
+    }
+
+    /* individual post content page  */
+
+    .blog-post-main {
+        height: 50vh;
+    }
+
+    .blog-post-heading {
+        font-size: 2.5rem;
+    }
+
+    .created_updated {
+        font-size: 1.2rem;
+    }
+
+    .update-post a {
+        width: 30%;
+        height: 8vw;
+    }
+
+
+    /* update post form */
+
+    .back_button{
+        margin-top: 10em;
+    }
+    .form-outer {
+        margin-top: 2em;
+    }
+
+    .form-main {
+        height: 100%;
+        width: 90%;
+    }
+
+    .heading-update {
+        font-size: 2.5rem;
+    }
+
+
+    .update-post-form div:first-child input {
+        height: 7vw;
+    }
+
+    .update-post-form div textarea {
+        height: 60vw;
+    }
+
+    .update-post-form .btn {
+        width: 20vw;
+        height: 7vw;
+        font-size: 1.2rem;
+    }
+
+    /* book tickets */
+
+    .book_tickets_image {
+        height: 25vh;
+    }
+
+    .book_tickets_form form div label {
+        font-size: 1.2rem;
+        width: 30%;
+    }
+
+    .book_tickets_form form div input,
+    .book_tickets_form form div select {
+        height: 5vw;
+        width: 60%;
+        border: 1px solid black;
+    }
+
+    .book_tickets_form form div input::placeholder,
+    .book_tickets_form form div select::placeholder {
+        font-size: 0.8rem;
+    }
+
+    .book_tickets_form div textarea {
+        height: 15vw;
+        width: 90%;
+        border: 1px solid black;
+    }
+
+    .book_tickets_form div textarea::placeholder {
+        font-size: 0.8rem;
+    }
+
+    .book_tickets_form form div button {
+        width: 30%;
+        height: 7vw;
+        font-size: 1rem;
+    }
+}
+
+/* waypoint */
+    
+
+.animate {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: all 0.6s;
+  }
+  
+  .animate.active-waypoint {
+    opacity: 1;
+    transform: translateY(0);
+  }

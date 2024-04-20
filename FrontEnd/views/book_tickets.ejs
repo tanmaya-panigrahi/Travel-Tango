@@ -1,0 +1,59 @@
+<div class="book_tickets">
+    <div class="book_tickets_main">
+        <div class="book_tickets_image animate">
+
+        </div>
+        <div class="book_tickets_form">
+            <p class=" book_tickets_heading highlight animate">Book Your Dream Destination</p>
+            <form action="/book-tickets" method="POST" class="animate">
+                <div>
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone:</label>
+                    <input type="number" id="phone" name="phone" placeholder="Enter your phone no." required>
+                </div>
+                <div>
+                    <label for="destinations">Destinations:</label>
+                    <select name="destinations" id="destinations">
+                        <option value="ladakh">Ladakh</option>
+                        <option value="spitivalley">Spiti Valley</option>
+                        <option value="kashmir">Kashmir</option>
+                        <option value="kasol">Kasol</option>
+                        <option value="birbilling">Bir Billing</option>
+                        <option value="manali">Manali</option>
+                        <option value="mcleodganj">McLeod Ganj</option>
+                        <option value="andaman">Andaman & Nicobar</option>
+                        <option value="dubai">Dubai</option>
+                        <option value="maldives">Maldives</option>
+                        <option value="thailand">Thailand</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="date">Date:</label>
+                    <input type="date" id="date" name="date" required>
+                </div>
+                <div>
+                    <label for="number_of_people">Number of People:</label>
+                    <input type="number" id="people" name="number_of_people" placeholder="Number of persons" required>
+                </div>
+                
+                <div>
+                    <label for="suggestions">Suggestions:</label>
+                    <textarea name="suggestions" id="suggestions" cols="60" rows="3" placeholder="Write your suggestions regarding the trip.."></textarea>
+                </div>
+                <div class="book_tickets_button">
+        
+                    <button type="submit">Book Now</button>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>

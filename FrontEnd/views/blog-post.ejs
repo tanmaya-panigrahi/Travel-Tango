@@ -1,0 +1,29 @@
+<div class="blog-post-main" style="background-image: url('/uploads/<%= post.image %>');">
+    <div class="blog-post-heading animate">
+        <p>
+            <%= post.title %>
+        </p>
+    </div>
+    <div class="shadow"></div>
+</div>
+<div class="created_updated animate">
+    <p>Created: <%= post.createdAt.toDateString() %>
+    </p>
+    <% if(+post.updatedAt===+new Date(0)){ %>
+        <p>Updated: Never</p>
+        <% } else { %>
+            <p>Updated: <%= post.updatedAt.toDateString() %>
+            </p>
+            <% } %>
+</div>
+<div class="blog-post-content animate">
+    <pre>
+        <p>
+            <%= post.body %>
+        </p>
+    </pre>
+    
+</div>
+<div class="update-post animate">
+    <a href="/update-post/<%= post._id %>">Update Post</a>
+</div>

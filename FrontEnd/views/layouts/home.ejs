@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Travel Tango
+    </title>
+    <link rel="icon" href="/images/favicon.png" type="image/x-icon">
+    <meta name="description" content="<%= locals.description %>">
+
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap">
+    <!-- Include jQuery, Waypoints and Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+</head>
+
+<body>
+    <div id="loader"></div>
+    <div class="main">
+        <div class="nav">
+            <div class="logo">
+                <img src="/images/logo.png" alt="">
+            </div>
+            <div class="nav-content-main">
+                <div class="nav-content">
+                    <ul>
+                        <li><a href="/home" class="nav-c">Home</a></li>
+                        <li class="dropdown">
+                            <a href="/home" class="dropbtn nav-c"><span>Destinations</span> <span>&#709;</span> </a>
+                            <div class="dropdown-content">
+                                <div class="india column">
+                                    <h3>India</h3><br>
+
+                                    <a href="/leh-ladakh">Leh Ladakh</a>
+                                    <a href="/spiti-valley">Spiti Valley</a>
+                                    <a href="/kashmir">Kashmir</a>
+                                    <a href="/kasol">Kasol</a>
+                                    <a href="/bir-billing">Bir Billing</a>
+                                    <a href="/manali">Manali</a>
+                                    <a href="/mcleod-ganj">McLeod Ganj</a>
+                                    <a href="/andaman-and-nicobar-islands">Andaman and Nicobar
+
+                                </div>
+                                <div class="international column">
+                                    <h3>International</h3><br>
+
+                                    <a href="/dubai">Dubai</a>
+                                    <a href="/maldives">Maldives</a>
+                                    <a href="/thailand">Thailand</a>
+
+
+                                </div>
+                            </div>
+
+
+                        </li>
+                        <li><a href="/blogs" class="nav-c">Blog</a></li>
+                        <li><a href="/book-tickets" class="nav-c">Book Tickets</a></li>
+
+                    </ul>
+                </div>
+                <div class="authentication">
+
+
+                    <div><a href="/logout"><button class="login">Logout</button></a></div>
+                    <!-- <div><a href="/signup"><button class="signup">Sign Up</button></a></div> -->
+                </div>
+
+            </div>
+
+            <div class="nav_icon">
+                <button style="background-color: transparent; border: none;"><img src="/images/svgs/nav_icon.svg"
+                        alt=""></button>
+            </div>
+
+        </div>
+        <div class="nav_phone_view">
+            <div class="nav-content-main">
+                <div class="nav-content">
+                    <ul>
+                        <li><a href="/home" class="nav-c">Home</a></li>
+                        <li class="dropdown">
+                            <a href="javascript:void(0);" class="dropbtn nav-c"><span>Destinations</span>
+                                <span>&#709;</span> </a>
+                            <div class="dropdown-content">
+                                <div class="india column">
+                                    <h3>India</h3><br>
+
+                                    <a href="/leh-ladakh">Leh Ladakh</a>
+                                    <a href="/spiti-valley">Spiti Valley</a>
+                                    <a href="/kashmir">Kashmir</a>
+                                    <a href="/kasol">Kasol</a>
+                                    <a href="/bir-billing">Bir Billing</a>
+                                    <a href="/manali">Manali</a>
+                                    <a href="/mcleod-ganj">McLeod Ganj</a>
+                                    <a href="/andaman-and-nicobar-islands">Andaman and Nicobar
+
+                                </div>
+                                <div class="international column">
+                                    <h3>International</h3><br>
+
+                                    <a href="/dubai">Dubai</a>
+                                    <a href="/maldives">Maldives</a>
+                                    <a href="/thailand">Thailand</a>
+
+
+                                </div>
+                            </div>
+
+
+                        </li>
+                        <li><a href="/blogs" class="nav-c">Blog</a></li>
+                        <li><a href="/book-tickets" class="nav-c">Book Tickets</a></li>
+
+                    </ul>
+                </div>
+                <div class="authentication">
+
+
+                    <div><a href="/logout"><button class="login">
+                                <p>Logout</p>
+                            </button></a></div>
+                    <!-- <div><a href="/signup"><button class="signup">Sign Up</button></a></div> -->
+                </div>
+
+            </div>
+        </div>
+
+        <!-- <div class="slideshow">
+            <div class="slide" style="background-image: url('/images/home_-background_1.jpg')"></div>
+            <div class="slide" style="background-image: url('/images/home_background_2.jpg')"></div>
+            <div class="slide" style="background-image: url('/images/home_background_3.jpg')"></div>
+            <div class="slide" style="background-image: url('/images/home_background_4.jpeg')"></div>
+
+
+        </div> -->
+
+        <div class="background_video">
+            <video autoplay muted loop preload="auto">
+                <source src="/vdo/animated_travel_video.mp4" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="shadow-effect"></div>
+
+        <div class="center-text text animate">
+            <h1 class="heading">Travel Tango!</h1>
+            <p class="sub-heading">
+                &ldquo; Explore the world with a tango of destinations. &rdquo; </p>
+
+        </div>
+
+    </div>
+
+
+
+    <section class="after-main-box">
+        <div class="after-main">
+
+
+
+            <div class="popular-destinations ">
+                <div class="heading animate">
+                    <h1>Popular Destinations</h1>
+                </div>
+
+
+
+                <div class="img-grid">
+                    <div class="grid1 grid-item animate">
+                        <div class="shadow"></div>
+                        <div class="places">Leh Ladakh</div>
+                    </div>
+                    <div class="grid2 grid-item animate">
+                        <div class="shadow"></div>
+                        <div class="places">Spiti Valley</div>
+                    </div>
+                    <div class="grid3 grid-item animate">
+                        <div class="shadow"></div>
+                        <div class="places">Kashmir</div>
+                    </div>
+                    <div class="grid4 grid-item animate">
+                        <div class="shadow"></div>
+                        <div class="places">Kasol</div>
+                    </div>
+                    <div class="grid5 grid-item animate">
+                        <div class="shadow"></div>
+                        <div class="places">Bir Billing</div>
+                    </div>
+                    <div class="grid6 grid-item animate">
+                        <div class="shadow"></div>
+                        <div class="places">Andaman and Nicobar Islands</div>
+                    </div>
+                    <div class="grid7 grid-item animate">
+                        <div class="shadow"></div>
+                        <div class="places">McLeod Ganj</div>
+                    </div>
+                    <div class="grid8 grid-item animate">
+                        <div class="shadow"></div>
+                        <div class="places">Manali</div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+
+
+            <div class="travel-themes">
+                <div class="heading animate">
+                    <h1>Travel Themes</h1>
+                </div>
+                <div class="themes">
+                    <div class="theme1 animate">
+                        <div class="theme_names">Solo Tours</div>
+                    </div>
+                    <div class="theme2 animate">
+                        <div class="theme_names">Family Trips</div>
+                    </div>
+                    <div class="theme3 animate">
+                        <div class="theme_names">Romantic Getaways</div>
+                    </div>
+                    <div class="theme4 animate">
+                        <div class="theme_names">College Tours</div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="description">
+                <div class="button_topics">
+                    <div class="why_us animate">
+                        <button id="button1" class="why_us_button active"><img src="/images/svgs/why_us.svg"
+                                alt=""><span>Why
+                                Us?</span></button>
+                    </div>
+                    <div class="services animate">
+                        <button id="button2" class="services_button"><img src="/images/svgs/services.svg"
+                                alt=""><span>Our
+                                Services</span></button>
+                    </div>
+
+                </div>
+                <div class="about_topics">
+                    <div id="content1" class="why_us_content active animate">
+                        <div class="why">
+                            <div>
+
+                                <img src="/images/svgs/why_1.svg" alt="">
+                            </div>
+                            <div><b>Experienced Staff</b><br>
+                                Our friendly consultants travel regularly & offer first-hand advice to help you settle
+                                for nothing but the best!
+                            </div>
+                        </div>
+                        <div class="why">
+                            <div>
+
+                                <img src="/images/svgs/why_2.svg" alt="">
+                            </div>
+                            <div><b>Hassle-free Experience</b><br>
+                                We coordinate your travel so flights, transfers & tours all connect smoothly and you can
+                                enjoy your journey.
+                            </div>
+                        </div>
+                        <div class="why">
+                            <div>
+
+                                <img src="/images/svgs/why_3.svg" alt="">
+                            </div>
+                            <div><b>Trusted by Travelers</b><br>
+                                We have conducted more than 10,000+ tours. So rest assured, you’re with an expert.</div>
+                        </div>
+
+                    </div>
+                    <div id="content2" class="services_content hidden animate">
+
+                        <div class="service_desc">
+                            <h2>Personalized Travel Planning</h2>
+                            This service offers customized travel plans based on the user's preferences, budget, and
+                            travel dates. It could include personalized recommendations for destinations, attractions,
+                            activities, and dining.You can also plan for no of individuals according to your choice.
+
+                        </div>
+                        <div class="service_desc">
+                            <h1>Safe Stay Assurance</h1>
+                            This service ensures that all recommended accommodations follow strict health and safety
+                            protocols. It could include features like verifying the implementation of hygiene standards,
+                            checking for compliance with local COVID-19 guidelines, and providing options for travel
+                            insurance.
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+
+    <%- include("../partials/footer") %>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+        <script src="/js/home.js"></script>
+
+
+</body>
+
+</html>

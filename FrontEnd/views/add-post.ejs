@@ -1,0 +1,33 @@
+
+<div class="back_button animate">
+
+    <a href="/blogs" style="color: black; padding-left: 2vw;" >&larr; Back</a>
+</div>
+<div class="form-outer">
+
+    <div class="form-main">
+        <div class="heading-update animate">
+            <p>Add Post+</p>
+        </div>
+        <form action="/add-post" method="POST" enctype="multipart/form-data" class="update-post-form animate">
+            <div>
+                <label for="title">Title:</label>
+                <input type="text" placeholder="Blog Title" name="title" class="title_class">
+
+            </div>
+            <div>
+                <label for="content">Content:</label>
+                <textarea name="content" id="" cols="20" rows="20" placeholder="Write the blog content here...."></textarea>
+
+            </div>
+            <div class="upload-image">
+                <label for="image">Image:</label>
+                <input type="file" name="image">
+
+            </div>
+
+            <input type="submit" value="Add+" class="btn">
+        </form>
+    </div>
+
+</div>

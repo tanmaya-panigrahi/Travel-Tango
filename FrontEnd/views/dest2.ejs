@@ -1,0 +1,96 @@
+<div class="main">
+
+    <div class="destination-main">
+        <div class="dest-text animate">
+            <p class="highlight">
+                <%= data.title %>
+            </p>
+            <p>~ &#x201C; <%= data.aboutPlace %> &#x201D;</p>
+        </div>
+        <div class="dest-slideshow animate">
+            <div class="slide" style="background-image: url('/destinations/<%= data.images[0] %>');"></div>
+            <div class="slide" style="background-image: url('/destinations/<%= data.images[1] %>');"></div>
+            <div class="slide" style="background-image: url('/destinations/<%= data.images[2] %>');"></div>
+            <div class="slide" style="background-image: url('/destinations/<%= data.images[3] %>');"></div>
+
+        </div>
+    </div>
+</div>
+<div class="separator animate">
+    <p><u>Description</u></p>
+</div>
+<section>
+    <div class="trip-info">
+        <p><span>Duration: </span>
+            <%= data.duration %>
+        </p>
+        <p class="itinerary-heading animate">Itinerary</p>
+        <div class="itinerary">
+            <div class="day animate">
+                <div class="lookup">
+
+                    <div class="day-heading">Day 01: </div>
+                    <div class="plus-sign">+</div>
+                </div>
+                <hr>
+                <div class="day-content">
+                    <p>
+                    <pre><%= data.day1 %></pre>
+
+                    </p>
+                </div>
+
+            </div>
+            <div class="day animate">
+                <div class="lookup">
+
+                    <div class="day-heading">Day 02: </div>
+                    <div class="plus-sign">+</div>
+                </div>
+                <hr>
+                <div class="day-content">
+                    <p>
+                    <pre><%= data.day2 %></pre>
+                    </p>
+                </div>
+
+            </div>
+            <div class="day animate">
+                <div class="lookup">
+
+                    <div class="day-heading">Day 03: </div>
+                    <div class="plus-sign">+</div>
+                </div>
+                <hr>
+                <div class="day-content">
+                    <p>
+                    <pre><%= data.day3 %></pre>
+                    </p>
+                </div>
+
+            </div>
+            
+        </div>
+
+        <p class="price-per-person animate"><span>Price Per Person: </span>
+            <%= data.price %> <sub><i>*plus 5% GST</i></sub>
+        </p>
+        <p class="other-info-heading animate"><span>Other Information</span></p>
+        <div class="other-info">
+            <div class="inclusion-exclusion-heading animate">
+               <button id="inclusion_button" class="active">Inclusion</button>
+                <button id="exclusion_button">Exclusion</button>
+                
+            </div>
+            <div class="inclusion-exclusion animate">
+                <p ><pre id="inclusion"><%= data.inclusion %></pre></p>
+                <p ><pre id="exclusion"><%= data.exclusion %></pre></p>
+            
+
+        </div>
+
+    </div>
+
+
+
+</section>

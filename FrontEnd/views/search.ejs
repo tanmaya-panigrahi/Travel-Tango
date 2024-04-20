@@ -1,0 +1,35 @@
+
+<div class="back_button animate">
+
+    <a href="/blogs" style="color: black; padding-left: 2vw;" >&larr; Back</a>
+</div>
+<div class="search-heading animate">
+    <p>Search Results: </p>
+</div>
+<div class="container">
+    <div class="blogs">
+        <% if(posts.length>0) {%>
+            <% for(let i=0;i<posts.length;i++){ %>
+
+                <div class="<%= i%3===0 ? 'full-width bg' : 'half-width bg' %> animate"
+                    style="background-image: url('/uploads/<%= posts[i].image %>');">
+                    <a href="/blogs/<%= posts[i]._id %>">
+                        <div class="heading-blog">
+
+                            <%= posts[i].title %>
+
+                        </div>
+                        <div class="shadow"></div>
+                    </a>
+                </div>
+            <% } %>
+        <% }else{ %>
+            <div class="search-heading no-blogs animate">
+                <p>No Blogs Found &#128530;</p>
+            </div>
+        <% } %>
+    </div>
+
+
+
+</div>
