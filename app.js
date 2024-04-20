@@ -1,20 +1,19 @@
 require("dotenv").config();
 
 const express = require("express");
-const expressLayout=require("express-ejs-layouts");
+const expressLayout = require("express-ejs-layouts");
 const MongoStore = require("connect-mongo");
-const methodOverride=require("method-override");
-const cookieParser=require("cookie-parser");
-const path=require("path");
-const session=require("express-session");
+const methodOverride = require("method-override");
+const cookieParser = require("cookie-parser");
+const path = require("path");
+const session = require("express-session");
 
 
-const connectDB1=require("./BackEnd/server/config/db1");
+const connectDB1 = require("./BackEnd/server/config/db1");
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-connectDB1();
-app.use(express.static("Frontend/public"));
+app.use(express.static("FrontEnd/public"));
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
@@ -39,11 +38,12 @@ app.set('views', 'FrontEnd/views');
 app.set('layout', './layouts/home');
 app.set('view engine', 'ejs');
 
-app.use("/",require("./BackEnd/server/routes/blog_login"));
+app.use("/", require("./BackEnd/server/routes/blog_login"));
 
 //app.use("/",require("./BackEnd/server/routes/admin"));
 
 
+connectDB1();
 app.listen(PORT, () => {
     console.log(`App listening at port ${PORT}`);
 })
