@@ -832,7 +832,7 @@ button.active {
 
 
     .nav_phone_view li .dropdown-content {
-        width: 60vw;
+        width: 80vw;
 
         /* z-index: 4; */
     }
@@ -916,7 +916,7 @@ button.active {
     }
 
     .center-text h1 {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
 
     .popular-destinations{
@@ -993,6 +993,14 @@ button.active {
         height: 10vh;
         font-size: 1.2rem;
     }
+    .why_us_button img,.services_button img{
+        width: 6vw;
+        height: 6vw;
+    }
+
+    .why_us_button span,.services_button span{
+        font-size: 1.2rem;
+    }
 
     .about_topics {
         gap: 1vw;
@@ -1000,6 +1008,11 @@ button.active {
 
     .why {
         width: 40%;
+    }
+
+    .why img{
+        width: 9vw;
+        height: 9vw;
     }
 
     .service_desc {
