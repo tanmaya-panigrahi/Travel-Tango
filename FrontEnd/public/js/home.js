@@ -1,8 +1,11 @@
 // background slide show
 // Waypoints
-window.addEventListener('load', function() {
+
+
+window.onload = function () {
   document.getElementById('loader').style.display = 'none';
-});
+}
+
 
 var elements = document.querySelectorAll('.animate');
 

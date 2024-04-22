@@ -101,7 +101,7 @@ body {
 }
 
 .logo img {
-    width: 3 00px;
+    width: auto;
     height: 100px;
 }
 
@@ -637,7 +637,7 @@ body {
 .theme2:hover,
 .theme3:hover,
 .theme4:hover {
-    opacity: 0.8;
+    scale: 1.1;
 }
 
 
